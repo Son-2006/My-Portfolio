@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  
+}
+html{
+      scroll-behavior: smooth;
+      
+    }
+
+/* Heading ko bold aur modern banane ke liye */
+h1, h2 {
+  font-weight: 600;
+}    
+ .header {
+  background-color: #1a1a1a;
+  border-top: 3px solid #0d6efd;
+  border-bottom: 3px solid #0d6efd;
+  padding: 15px 0px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 18px;
+  color: white; 
+  transition: 0.3s ease-in-out;
+  border-bottom: 2px solid transparent; 
+  text-shadow: 0 0 1px #ffffff;
+}
+
+.link:hover {
+  /* Hover par text white hi rahega */
+  color: white;
+  
+  /* Underline blue (ya koi aur contrast color) rahega */
+  border-bottom: 3px solid #0d6efd; 
+  
+  /* Gap adjust karein taaki glow underline ke close na lage */
+  padding-bottom: 3px; 
+  text-shadow: 0 0 10px #0d6efd, 0 0 20px #0d6efd, 0 0 30px #0d6efd;
+}
+
+
+/* Image Glow Effect */
+.profile-image {
+  width: 280px;      /* Fixed width */
+  height: 280px;     /* Fixed height (dono barabar honi chahiye) */
+  border-radius: 50%; /* Ye image ko perfect circle banata hai */
+  object-fit: cover;  /* Ye image ko bina stretch kiye circle mein fit kar dega */
+  object-position: center; /* Ye face ko center mein rakhega */
+  border: 3px solid #0d6efd; /* Aapka blue border */
+  box-shadow: 0 0 30px rgba(0, 42, 255, 0.6); /* Glow effect */
+}
+
+/* Buttons Glow Effect */
+.btn-glow {
+  transition: all 0.4s ease-in-out;
+  border-width: 2px;
+}
+
+
+
+.btn-glow:hover {
+  box-shadow: 0 0 15px 3px rgba(0, 255, 255, 0.6); /* Cyan/Blue Glow */
+  transform: translateY(-2px); /* Hover par thoda upar jump karega */
+}
+
+/* Section Background */
+#projects {
+  padding: 60px 0;
+}
+
+/* Project Card Style - Consistent with About Me */
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  height: 100%; /* Taaki sab cards barabar height ke hon */
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #00d4ff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+body{
+  background: #000411
+}
